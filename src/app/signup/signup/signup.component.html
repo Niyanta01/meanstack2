@@ -1,0 +1,65 @@
+<app-panel-box>
+
+ 
+    <span panel-title>sign up</span>
+    <div panel-content>
+      <form #userForm="ngForm">
+        <div class = "form-group">
+          
+          <label class="control-label">username</label> 
+          <input type="text" placeholder="username" class="form-control" name="username"  
+           required minlength="5" [(ngModel)]= "user.username" #usernameVar="ngModel"/>
+  
+          <div *ngIf= "!usernameVar.valid && usernameVar.touched">
+              <div class="alert alert-danger" *ngIf="usernameVar.errors.required">Please fill in username</div>
+              <div class="alert alert-danger" *ngIf="usernameVar.errors.minlength">Please fill in valid username</div>
+            </div>
+          </div>
+        
+          <div class = "form-group">
+            <label class="control-label">password</label> 
+            <input type="password" placeholder="password" class="form-control" name="password"  
+             required minlength="8" [(ngModel)]= "user.password" #passwordVar="ngModel"/>
+    
+            <div *ngIf= "!passwordVar.valid && passwordVar.touched">
+                <div class="alert alert-danger" *ngIf="passwordVar.errors.required">Please fill in password</div>
+                <div class="alert alert-danger" *ngIf="passwordVar.errors.minlength">Please fill in valid password</div>
+              </div>
+          </div>
+
+        
+            <div class = "form-group">
+              <label class="control-label">firstname</label> 
+          <input type="text" placeholder="firstname" class="form-control" name="firstname"  
+           required [(ngModel)]= "user.firstname" #firstnameVar="ngModel"/>
+  
+          <div *ngIf= "!firstnameVar.valid && firstnameVar.touched">
+              <div class="alert alert-danger" *ngIf="firstnameVar.errors.required">Please fill in firstname</div>
+              <div class="alert alert-danger" *ngIf="firstnameVar.errors.minlength">Please fill in valid firstname</div>
+            </div>
+        
+            </div>
+          
+            <div class = "form-group">
+              <label class="control-label">lastname</label> 
+            <input type="text" placeholder="lastname" class="form-control" name="lastname" 
+            required [(ngModel)]= "user.lastname" #lastnameVar="ngModel"/>
+            
+            <div *ngIf= "!lastnameVar.valid && lastnameVar.touched">
+              <div class="alert alert-danger" *ngIf="lastnameVar.errors.required">Please fill in lastname</div>
+              <div class="alert alert-danger" *ngIf="lastnameVar.errors.minlength">Please fill in valid lastname</div>
+            </div>
+            </div>
+            
+        
+  
+            <button class="btn btn-primary" [disabled]="!userForm.valid" (click)="signUp()" >Save</button>
+          
+      </form>
+  
+    </div>
+  
+ 
+  
+
+</app-panel-box>

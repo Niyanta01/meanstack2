@@ -1,0 +1,19 @@
+
+<app-panel-box>
+
+  <span panel-title>Post</span>
+
+  <div panel-content >
+  <div *ngFor="let p of posts_details">
+      <h4>Name: {{p.username}}</h4>
+    <h5>Title : {{p.postTitle}}</h5>
+    <p>Description: {{p.postDescription}}</p>
+      
+     <app-comments [comments_val] = "p._id" >
+       <!-- {{commentsData}} -->
+     </app-comments>
+    </div>
+
+
+  </div>
+</app-panel-box>

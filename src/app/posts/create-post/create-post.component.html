@@ -1,0 +1,33 @@
+
+
+  <app-panel-box>
+    
+    <span panel-title>Create Posts</span>
+    <div panel-content>
+        <form #postForm="ngForm">
+     
+      <div class="form-group">
+        <label for="createPostUsername">Created By</label>
+        <input type="text" class="form-control" id="createPostUsername" placeholder="Please enter your name"
+         [(ngModel)]="c_post.username" name="username" required>
+  
+      </div>
+
+      <div class="form-group">
+        <label for="postTitle">Post Title</label>
+        <input type="text" class="form-control" id="postTitle" placeholder="Enter post-title" 
+        [(ngModel)]="c_post.postTitle" name="postTitle" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="postDescription">Post Description</label>
+        <input type="text" class="form-control" id="postDescription" placeholder="Add Description to your post" 
+        [(ngModel)]="c_post.postDescription" name="postDescription" required>
+      </div>
+
+      <button type="button" class="btn btn-default" (click)="createPost()" [disabled]="!postForm.valid">Create</button>
+   
+
+      </form>
+    </div>
+  </app-panel-box>

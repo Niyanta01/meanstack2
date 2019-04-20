@@ -1,0 +1,15 @@
+
+<div class="form-inline">
+    
+  <form #commentsForm="ngForm">
+<div class="form-group" >
+    <input type="text" class="form-control" id="comment" placeholder="Edit your post description..." 
+    [(ngModel)]="postDescription_update" name="comment" required/>    
+</div>
+
+<button type = "button" class="btn btn-default"  (click)="saveNewPost()" [disabled]="!commentsForm.valid">
+    <span class="glyphicon glyphicon-edit"></span>
+</button>
+</form>
+
+</div>

@@ -1,0 +1,50 @@
+<div>
+
+  <button type="button" class="btn btn-default" (click)="deletePost()" style="display: inline;">
+    <span class="glyphicon glyphicon-remove"></span>
+  </button>
+
+  <button type="button" class="btn btn-default" (click)="sendDataFromComments()" style="display: inline;">
+    <span class="glyphicon glyphicon-comment"></span>
+  </button>
+
+  <button type="button" class="btn btn-default" (click)="editPosts()" style="display: inline;">
+    <span class="glyphicon glyphicon-edit"></span>
+  </button>
+
+
+  <!-- <div [title]="likes_array"> -->
+    <button type="button" class="btn btn-default" (click)="likePost()" style="display: inline;"
+       [title]="likes_array"> 
+      <span class="glyphicon glyphicon-heart" >{{likes_val}}</span>
+    </button>
+  <!-- </div> -->
+
+  <div *ngFor="let c of comments_array">
+    <div *ngIf="showHideComments">
+      <p>Comments: {{c.comment}}</p>
+    </div>
+
+  </div>
+  <br />
+
+  <div class="form-inline">
+    <form #commentsForm="ngForm">
+      <div class="form-group">
+
+        <input type="text" class="form-control" id="comment" placeholder="Write your comments..."
+          [(ngModel)]="commentBody" name="comment" required />
+      </div>
+
+      <button type="button" class="btn btn-default" (click)="saveComment()" [disabled]="!commentsForm.valid">
+        <span class="glyphicon glyphicon-ok"></span>
+      </button>
+    </form>
+  </div>
+
+ 
+    <app-edit-post *ngIf="showHidePostsEdit" [pID]="postID_edit">
+
+    </app-edit-post>
+ 
+</div>

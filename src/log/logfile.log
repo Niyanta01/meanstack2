@@ -1,0 +1,27 @@
+{"level":"info","message":"mongodb://localhost:27017/meanstack_2","timestamp":"2019-04-07T20:19:15.555Z"}
+{"level":"info","message":"server at localhost 3000","timestamp":"2019-04-07T20:19:15.612Z"}
+{"level":"info","message":"database connected","timestamp":"2019-04-07T20:19:16.660Z"}
+{"level":"info","message":"mongodb://localhost:27017/meanstack_2","timestamp":"2019-04-07T20:21:42.704Z"}
+{"level":"info","message":"server at localhost 3000","timestamp":"2019-04-07T20:21:42.767Z"}
+{"level":"info","message":"database connected","timestamp":"2019-04-07T20:21:43.808Z"}
+{"level":"info","message":"mongodb://localhost:27017/meanstack_2","timestamp":"2019-04-07T20:49:38.983Z"}
+{"level":"info","message":"server at localhost 3000","timestamp":"2019-04-07T20:49:39.060Z"}
+{"level":"info","message":"database connected","timestamp":"2019-04-07T20:49:40.094Z"}
+{"level":"info","message":"mongodb://localhost:27017/meanstack_2","timestamp":"2019-04-08T14:51:26.501Z"}
+{"level":"info","message":"server at localhost 3000","timestamp":"2019-04-08T14:51:26.561Z"}
+{"level":"info","message":"database connected","timestamp":"2019-04-08T14:51:27.649Z"}
+{"level":"info","message":"mongodb://localhost:27017/meanstack_2","timestamp":"2019-04-08T18:15:20.415Z"}
+{"level":"info","message":"server at localhost 3000","timestamp":"2019-04-08T18:15:20.525Z"}
+{"level":"info","message":"database connected","timestamp":"2019-04-08T18:15:21.585Z"}
+{"level":"info","message":"mongodb://localhost:27017/meanstack_2","timestamp":"2019-04-08T18:17:02.072Z"}
+{"level":"info","message":"server at localhost 3000","timestamp":"2019-04-08T18:17:02.276Z"}
+{"level":"info","message":"database connected","timestamp":"2019-04-08T18:17:03.512Z"}
+{"level":"info","message":"mongodb://localhost:27017/meanstack_2","timestamp":"2019-04-08T20:09:06.510Z"}
+{"level":"info","message":"server at localhost 3000","timestamp":"2019-04-08T20:09:06.584Z"}
+{"level":"info","message":"database connected","timestamp":"2019-04-08T20:09:07.646Z"}
+{"level":"info","message":"mongodb://localhost:27017/meanstack_2","timestamp":"2019-04-09T13:44:04.753Z"}
+{"level":"info","message":"server at localhost 3000","timestamp":"2019-04-09T13:44:04.812Z"}
+{"level":"error","message":"failed to connect to server [localhost:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]","timestamp":"2019-04-09T13:44:06.836Z"}
+{"level":"info","message":"mongodb://localhost:27017/meanstack_2","timestamp":"2019-04-09T13:45:17.883Z"}
+{"level":"info","message":"server at localhost 3000","timestamp":"2019-04-09T13:45:17.939Z"}
+{"level":"info","message":"database connected","timestamp":"2019-04-09T13:45:18.998Z"}
